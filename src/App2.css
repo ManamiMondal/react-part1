@@ -1,0 +1,92 @@
+.text-container {
+  height: 200vh; /* You may want to adjust this based on your website's content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black !important;
+}
+
+.text {
+  position: fixed;
+  top: 40%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -.01rem;
+  margin: 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /* font-family: lab-grotesque, sans-serif; */
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.past {
+  color: white;
+}
+
+.future {
+  color: white;
+  opacity: 0.125;
+}
+
+.joinBeta {
+  background: #fff;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: .7rem;
+  transition: background .4s linear;
+  will-change: background;
+  padding: .815rem 1.232rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.joinBeta:hover {
+  background: #a594fd;
+  border-color: black;
+}
+
+.spanJoinBeta {
+  font-family: lab-grotesque, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.spanJoinBeta:hover {
+  /* transition: transform 1s ease-in-out;
+  transform: rotateX(360deg);
+  transform-origin: top; */
+  transition: .8s cubic-bezier(.775, .07, .575, .995);
+  transform-style: preserve-3d;
+  transform: rotateX(360deg);
+}
